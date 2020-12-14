@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day2"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day2"
 )
 
 func TestNumOneValid(t *testing.T) {

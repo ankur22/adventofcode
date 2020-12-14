@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day3"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day3"
 )
 
 func TestFindTreesPartOne(t *testing.T) {

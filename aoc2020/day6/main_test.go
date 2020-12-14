@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day6"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day6"
 )
 
 func TestSumYesAnswers(t *testing.T) {

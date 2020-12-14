@@ -3,7 +3,7 @@ package main_test
 import (
 	"testing"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day5"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day5"
 	"github.com/stretchr/testify/assert"
 )
 

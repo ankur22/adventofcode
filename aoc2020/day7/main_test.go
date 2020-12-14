@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day7"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day7"
 )
 
 func TestFindNumBags(t *testing.T) {

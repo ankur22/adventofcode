@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	main "git.curve.tools/go/playground/adventofcalendar20/day9"
+	main "git.curve.tools/go/playground/adventofcode/aoc2020/day9"
 )
 
 func TestFindNotSum(t *testing.T) {
