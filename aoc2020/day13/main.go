@@ -12,54 +12,6 @@ func main() {
 	fmt.Println("Part 2: ", CalcEarliestConsecutiveTime(input))
 }
 
-// func CalcEarliestConsecutiveTime(input []string) int {
-// 	_, buses := parse(input)
-
-// 	diff := make([]int, len(buses))
-
-// 	for i := range buses {
-// 		diff[i] = i
-// 	}
-
-// 	t := 0
-// 	offset := 1
-// 	cur := -1
-// 	count := 0
-// 	for {
-// 		count++
-// 		t += offset
-// 		found := true
-// 		for i := 0; i < len(buses); i++ {
-// 			count++
-// 			if buses[i] == 0 {
-// 				continue
-// 			}
-// 			d := t + diff[i]
-// 			r := d % buses[i]
-// 			if r != 0 {
-// 				found = false
-// 				break
-// 			} else {
-// 				if cur < i {
-// 					offset = buses[i]
-// 					if i < len(buses)-1 {
-// 						found = false
-// 					}
-// 					cur = i
-// 					break
-// 				}
-// 			}
-// 		}
-// 		if found {
-// 			break
-// 		}
-// 	}
-
-// 	fmt.Println(count)
-
-// 	return t
-// }
-
 func CalcEarliestConsecutiveTime(input []string) int {
 	_, buses := parse(input)
 
