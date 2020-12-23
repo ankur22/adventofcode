@@ -14,6 +14,16 @@ func main() {
 	fmt.Println("Part 1: ", SumBitmask(input))
 }
 
+func SumBitMaskWithMemoryAddressDecoder(input []string) int {
+	_ = parse(input)
+
+	// Use bitmask to create all combination of addresses (due to floating bit)
+	// Set the value to all the addresses
+	// Add up all the values in all the addresses and return the sum
+
+	return 0
+}
+
 func SumBitmask(input []string) int {
 	ii := parse(input)
 

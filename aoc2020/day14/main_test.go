@@ -3,9 +3,8 @@ package main_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	main "git.curve.tools/go/playground/adventofcode/aoc2020/day14"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSumBitmask(t *testing.T) {
@@ -67,6 +66,36 @@ func TestSumBitmask(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := main.SumBitmask(tt.input)
+			assert.Equal(t, tt.want, got)
+		})
+	}
+}
+
+func TestSumBitMaskWithMemoryAddressDecoder(t *testing.T) {
+	type args struct {
+		input []string
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "1",
+			args: args{
+				input: []string{
+					"mask = 000000000000000000000000000000X1001X",
+					"mem[42] = 100",
+					"mask = 00000000000000000000000000000000X0XX",
+					"mem[26] = 1",
+				},
+			},
+			want: 208,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := main.SumBitMaskWithMemoryAddressDecoder(tt.args.input)
 			assert.Equal(t, tt.want, got)
 		})
 	}
